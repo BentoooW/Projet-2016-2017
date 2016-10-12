@@ -1,1 +1,51 @@
+/*
+Go trouver une police cool
+Trouver des photos ou une couleur cool pour la baniere ou le background
+*/
 
+body{
+	margin: 0px 0px 0px 0px; /*Pour que la page colle au bords de l'écrans <= /!\ISSUE/!\ le haut colle pas (╯°□°）╯︵ ┻━┻ */
+}
+
+header{
+	text-align: center;
+	height: 200px;
+	background-color: red; /*le temps de definire le design*/
+}
+
+nav ul{
+	height: 30px; /*Le menu nav qui fait ses 30px de hauteur*/
+	margin: 0px 0px 0px 0px;	/*Pour que le menu nav colle au reste*/
+	padding: 0px 0px 0px 0px;
+}
+
+nav li{
+	text-align: center;
+	float: left;	/*Menu nav horizontal sous la baniere*/
+	width: 20%;		/* 100% de largeure divizer par 5 boutons, penser à le changer si on ajoute des boutons */
+	height: 30px;
+	background-color: green; /*le temps de definire le design*/
+	list-style-type: none;	/*Pas de puces*/
+	/*On pourais ajouter un degradé dans chaques boutons pour les differentier*/
+	border-bottom: solid 10px green;
+}
+
+nav li:hover{
+	animation-name: navHover;
+	animation-duration: 1s;
+	animation-timing-function: ease;
+	
+}
+
+nav{
+}
+
+@keyframes navHover {
+		0% {border-bottom-color: green;}
+  	  100% {border-bottom-color: yellow;}
+}
+
+@-webkit-keyframes mymove {
+		0% {border-bottom-color: green;}
+  	  100% {border-bottom-color: yellow;}
+	}
